@@ -1,0 +1,195 @@
+header{
+    background-color: beige;
+}
+body{
+    background-color: aqua;
+}
+
+.encript-button{
+
+    display: inline-block;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+
+    position: bottom;
+    width: 328px;
+    height: 67px;
+    left: 0px;
+    top: 0px;
+
+    background: #0A3871;
+    border-radius: 24px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 24px;
+
+
+}
+.encript-button:hover{
+    color: burlywood;
+}
+
+
+.desencript-button{
+
+    display: inline-block;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+
+    position: bottom;
+    width: 328px;
+    height: 67px;
+    left: 352px;
+    top: 0px;
+
+
+
+    background: #D8DFE8;
+
+    border: 1px solid #0A3871;
+    box-sizing: border-box;
+    border-radius: 24px;
+
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 24px;  
+}
+
+.desencript-button:hover{
+    color: burlywood;
+}
+
+.areadetexto{
+
+
+    display: inline-block;
+    width: 600px;
+    height: 52px;
+    left: 240px;
+    top: 168px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 150%;
+    margin: 100px 100px;
+
+    border-radius: 5px;
+
+
+
+    color: #0A3871;
+
+}
+
+.show-text{
+
+
+position: fixed;
+width: 400px;
+height: 500px;
+left: 1000px;
+top: 200px;
+
+background: url(imagenes/Muñeco.png);
+
+box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+border-radius: 32px;
+border: 1px solid violet;
+
+
+font-size: 30px;
+margin: -50px 0px;
+text-align: justify;
+
+padding: 20px 20px;
+
+}      
+
+.copy-button{
+
+display: inline-block;
+flex-direction: row;
+align-items: flex-start;
+padding: 24px;
+
+position: relative;
+width: 328px;
+height: 67px;
+left: -750px;
+top: 100px;
+
+
+background: #D8DFE8;
+text-align: center;
+
+border: 1px solid #0A3871;
+box-sizing: border-box;
+border-radius: 24px;
+
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 100px 200px;
+
+}
+
+p{
+    font-size: 20px;
+     font-weight: bold;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+main{
+
+    margin: 0px 0px 0px 100px;
+
+}
+
+main p{
+
+    margin-bottom: 0cm;
+}
+
+
+footer p{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 100px 0;
+
+}
+
+footer{
+    background-color: beige;
+    position: relative;
+    width: 100%;
+}
+
+.copy-button:hover{
+    color: burlywood;
+}
+
+.copy-button:active {
+
+    background: orange;
+}
+
+header h1{
+
+    display: inline-block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    color: #0A3871;
+    
+    
+
+
+}
