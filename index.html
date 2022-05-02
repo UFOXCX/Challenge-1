@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Challenge #1</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    
+        
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <img src="imagenes/Logo@2x.png">
+            <h1>Encriptador / Desencriptador de palabras</h1>
+        
+        </header>
+    
+       <main>
+
+            <div>
+
+                <input class="areadetexto" type="text" id="areadetexto" placeholder="Ingrese su texto aqui"></input>
+                <text type="text" class="show-text" id="texto-mostrado"></text>
+
+            </div>
+            
+            <p>! Solo letras minusculas y sin acento</p>
+
+
+            <div class="buttons"> 
+
+                <button class="encript-button"id="encript-button" onclick="encriptar()">ENCRIPTAR</button>
+                <button class="desencript-button" id="desencript-button" onclick="desencriptar()">DESENCRIPTAR</button>
+                <button class="copy-button" onclick="copyToClipboard()">COPIAR</button>
+
+            </div>
+        
+       </main>
+
+       <footer>
+
+            <p class="derechos">Desarrollado por Fabian Villalobos Mendez</p>
+
+       </footer>
+
+
+    </body>
+    
+
+</html>
+
+<script>
+
+    var input = document.getElementById("areadetexto");
+    var textoEntrada ="";
+    var encriptado = "";
+    input.focus();
+
+    
+    function encriptar(){
+
+        encriptado = "";
+        textoEntrada = input.value.toString();
+        
+        for(var x=0;x<=textoEntrada.length;x++){
+            if(textoEntrada.charAt(x) == "e"){
+                encriptado = encriptado + "enter";
+                
+                
+
+            }
+            else if(textoEntrada.charAt(x) == "i"){
+                encriptado = encriptado + "imes";
+                
+
+
+            }
+            else if(textoEntrada.charAt(x) == "a"){
+                encriptado = encriptado + "ai";
+                
+
+            }
+            else if(textoEntrada.charAt(x) == "o"){
+                encriptado = encriptado + "ober";
+                
+
+            }
+            else if(textoEntrada.charAt(x) == "u"){
+                encriptado = encriptado + "ufat";
+                
+
+            }
+            else{
+                encriptado = encriptado + textoEntrada.charAt(x);
+            }
+            
+        }
+
+
+        document.getElementById("texto-mostrado").innerText = encriptado;
+        input.value = "";
+        
+        
+
+    }
+
+    function desencriptar(){
+
+
+        var desencriptar = input.value.toString();
+        
+
+        desencriptar = desencriptar.replaceAll("enter","e");
+        desencriptar = desencriptar.replaceAll("imes","i");
+        desencriptar = desencriptar.replaceAll("ai","a");
+        desencriptar = desencriptar.replaceAll("ober","o");
+        desencriptar = desencriptar.replaceAll("ufat","u");
+    
+        document.getElementById("texto-mostrado").innerText = desencriptar;
+        input.value = "";
+    }
+
+    function copyToClipboard() {
+
+        var textField = document.getElementById("texto-mostrado").innerText;
+        navigator.clipboard.writeText(textField);
+    }
+        
+</script>
